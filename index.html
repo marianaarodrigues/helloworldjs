@@ -17,68 +17,113 @@
         <h1 class="text-center">Prática de introdução ao Javascript</h1>
     </header>
     <main>
-        <div class="row align-items-center">
-            <div class="col-auto" style="border: 1px solid red;">
-                <p style="border: 1px solid blue;">Soma dos números 2 + 3</p>
+        <div class="row align-items-center my-3">
+            <div class="col-auto p-0">
+                <p class="my-auto">Soma dos números: 3 + 2</p>
             </div>
-            <div class="col-auto" style="border: 1px solid red;">
-                <button type="button" class="btn btn-primary" onclick="soma(3, 2)">
+            <div class="col-auto">
+                <button type="button" class="btn btn-outline-primary" onclick="soma(3, 2)">
                     Soma
                 </button>
             </div>
         </div>
-        <div class="col-12">
-            <button onclick="subtracao(3, 2)">
-                Subtração
-            </button>
+        <div class="row align-items-center my-3">
+            <div class="col-auto p-0">
+                <p class="my-auto">Subtração dos números: 3 - 2</p>
+            </div>
+            <div class="col-auto">
+                <button type="button" class="btn btn-outline-primary" onclick="subtracao(3, 2)">
+                    Subtração
+                </button>
+            </div>
+        </div>
+        <div class="row align-items-center my-3">
+            <div class="col-auto p-0">
+                <p class="my-auto">Multiplicação dos números: 3 * 2</p>
+            </div>
+            <div class="col-auto">
+                <button type="button" class="btn btn-outline-primary" onclick="multiplicacao(3, 2)">
+                    Multiplicação
+                </button>
+            </div>
+        </div>
+        <div class="row align-items-center my-3">
+            <div class="col-auto p-0">
+                <p class="my-auto">Divisão dos números: 3 / 2</p>
+            </div>
+            <div class="col-auto">
+                <button type="button" class="btn btn-outline-primary" onclick="divisao(3, 2)">
+                    Divisão
+                </button>
+            </div>
+        </div>
+        <div class="row align-items-center my-3">
+            <div class="col-auto p-0">
+                <p class="my-auto">Informe o seu nome</p>
+            </div>
+            <div class="col-auto">
+                <button type="button" class="btn btn-outline-primary" onclick="mostrarnome()">
+                    Nome
+                </button>
+            </div>
+        </div>
+        <div class="row align-items-center my-3">
+            <div class="col-auto p-0">
+                <p class="my-auto">Cálculo da área de um retângulo com base = 5 e altura = 7</p>
+            </div>
+            <div class="col-auto">
+                <button type="button" class="btn btn-outline-primary" onclick="arearetangulo(5, 7)">
+                    Área do retângulo
+                </button>
+            </div>
+        </div>
+        <div class="row align-items-center my-3">
+            <div class="col-auto p-0">
+                <p class="my-auto">Cálculo da área de um círculo, informe o raio</p>
+            </div>
+            <div class="col-auto">
+                <button type="button" class="btn btn-outline-primary" onclick="areacirculo()">
+                    Área do círculo
+                </button>
+            </div>
+        </div>
+        <div class="row align-items-center my-3">
+            <div class="col-auto p-0">
+                <p class="my-auto">Cálculo da hipotenusa de um triângulo retângulo, informe o raio</p>
+            </div>
+            <div class="col-auto">
+                <button type="button" class="btn btn-outline-primary" onclick="hipotenusa()">
+                    Hipotenusa de um triângulo retângulo
+                </button>
+            </div>
+        </div>
+        <div class="row align-items-center my-3">
+            <div class="col-auto p-0">
+                <p class="my-auto">Conversão de um valor em reais para dólares</p>
+            </div>
+            <div class="col-auto">
+                <button type="button" class="btn btn-outline-primary" onclick="realdolar()">
+                    Reais para dólares
+                </button>
+            </div>
+        </div>
+        <div class="row align-items-center my-3">
+            <div class="col-auto p-0">
+                <p class="my-auto">Conversão de uma temperatura em graus Celsius para graus Fahrenheit</p>
+            </div>
+            <div class="col-auto">
+                <button type="button" class="btn btn-outline-primary" onclick="celsiusfahrenheit()">
+                    Graus Celsius para graus Fahrenheit
+                </button>
+            </div>
         </div>
         <div class="col-12">
-            <button onclick="multiplicacao(3, 2)">
-                Multiplicação
-            </button>
-        </div>
-        <div class="col-12">
-            <button onclick="divisao(3, 2)">
-                Divisão
-            </button>
-        </div>
-        <div class="col-12">
-            <button onclick="mostrarnome()">
-                Mostrar nome
-            </button>
-        </div>
-        <div class="col-12">
-            <button onclick="arearetangulo(5, 7)">
-                Área do retângulo
-            </button>
-        </div>
-        <div class="col-12">
-            <button onclick="areacirculo()">
-                Área do círculo
-            </button>
-        </div>
-        <div class="col-12">
-            <button onclick="hipotenusa()">
-                Hipotenusa de um triângulo retângulo
-            </button>
-        </div>
-        <div class="col-12">
-            <button onclick="realdolar()">
-                Conversão de reais em dólares
-            </button>
-        </div>
-        <div class="col-12">
-            <button onclick="celsiusfahrenheit()">
-                Conversão de graus Celsius em graus Fahrenheit
-            </button>
-        </div>
-        <div class="col-12">
-            <button onclick="mediaaritmetica()">
+            <button type="button" class="btn btn-outline-primary" onclick="mediaaritmetica()">
                 Média aritmética de 3 notas
             </button>
         </div>
         <div class="col-12">
-            <button onclick="raizes2grau()">
+            <button type="button" class="btn btn-outline-primary" onclick="raizes2grau()">
                 Raízes de uma equação do segundo grau
             </button>
         </div>
